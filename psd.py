@@ -29,7 +29,7 @@ class ServiceDiscovery(object):
 
 	def get(self, name):
 		service = filter(lambda service: service.name == name, self.services)[0]
-		return service.get_smoothest_server()
+		return "{0}/{1}".format(service.get_smoothest_server(), name)
 
 	def __str__(self):
 		return reduce(lambda service, acc: service.join(acc), map(str, self.services))

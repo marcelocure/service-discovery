@@ -1,9 +1,9 @@
 from psd import Service, ServiceDiscovery
 
 def __main__():
-	servers1 = ['abc.aws.com','abc2.aws.com','abc3.aws.com','abc4.aws.com']
+	servers1 = ['https://abc.aws.com','https://abc2.aws.com','https://abc3.aws.com','https://abc4.aws.com']
 	service1 = Service('abc', servers1)
-	servers2 = ['def.aws.com','def2.aws.com','def3.aws.com']
+	servers2 = ['https://def.aws.com','https://def2.aws.com','https://def3.aws.com']
 	service2 = Service('def', servers2)
 
 	serviceDiscovery = ServiceDiscovery()
